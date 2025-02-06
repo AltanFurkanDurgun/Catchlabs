@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         monochrome = false,
         glue = "StepDefinitions",
         dryRun = false,
-        tags = "@transferMoney"
+        tags = "@test"
 )
 
 public class CukesRunner {
