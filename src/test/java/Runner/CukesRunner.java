@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         monochrome = false,
         glue = "StepDefinitions",
         dryRun = false,
-        tags = "@test"
+        tags = "@transferMoneyOtherAccount"
 )
 
 public class CukesRunner {

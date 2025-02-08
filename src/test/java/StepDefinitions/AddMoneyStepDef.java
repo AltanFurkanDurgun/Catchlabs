@@ -82,6 +82,7 @@ public class AddMoneyStepDef {
 
     @Then("Verify that the user should be see total amount is correct")
     public void verifyThatTheUserShouldBeSeeTotalAmountIsCorrect() throws ParseException {
+        BrowserUtils.waitFor(2);
         BrowserUtils.waitForVisibility(addMoneyPage.amountText, 15);
         String actualTotalAmount = addMoneyPage.amountText.getText();
         System.out.println("actualTotalAmount = " + actualTotalAmount);

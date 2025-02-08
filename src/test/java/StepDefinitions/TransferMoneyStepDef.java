@@ -130,4 +130,14 @@ public class TransferMoneyStepDef {
         softAssert.assertAll();
 
     }
+
+    @And("Verify that the user should be see amount on transactions place \\(otherAccount)")
+    public void verifyThatTheUserShouldBeSeeAmountOnTransactionsPlaceOtherAccount() {
+        BrowserUtils.waitForVisibility(transferMoneyPage.allTransactionInfo.get(8), 15);
+        String actualAmount = transferMoneyPage.allTransactionInfo.get(8).getText();
+        System.out.println("expectedAmount = " + expectedAmount);
+        System.out.println("actualAmount = " + actualAmount);
+        softAssert.assertEquals(actualAmount,expectedAmount);
+        softAssert.assertAll();
+    }
 }

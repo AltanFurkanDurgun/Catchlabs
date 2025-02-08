@@ -29,5 +29,5 @@ Feature: Transfer money process
     And User can click send button
     Then Verify that the user should be see sender on transactions place
     And Verify that the user should be see receiver on transactions place
-    And Verify that the user should be see amount on transactions place
+    And Verify that the user should be see amount on transactions place (otherAccount)
 
